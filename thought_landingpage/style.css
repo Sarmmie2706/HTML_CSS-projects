@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    width: auto;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
+    
+}
+
+.logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.logotext {
+    display: flex;
+    color: red;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+img {
+    width: 60px;
+    height: auto;
+}
+
+.mid {
+    display: flex;
+    gap: 50px;
+    color: rgba(128, 128, 128, 0.944);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: rgba(202, 8, 8, 0.993);
+    border-radius: 30px;
+    padding: 15px 30px;
+    border-style: none;
+    color: white;
+    font-size: 15px;
+}

@@ -54,7 +54,7 @@ button {
 .content1 {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+   
     border: 2px solid green;
 }
 
@@ -70,7 +70,7 @@ button {
     padding-left: 10px;
 }
 
-.image::after, .st-content5::after, .nd-content6::after, .nd-content7::after {
+.image::after, .st-content5::after, .nd-content6::after, .nd-content7::after, .nd-content10::after {
     content: ' ';
     display: table;
     clear: both;
@@ -109,7 +109,7 @@ button {
     width: 550px;
 }
 
-.content2, .content3, .content5, .content6, .content7 {
+.content2, .content3, .content5, .content6, .content7, .content8, .content9, .content10 {
     display: flex;
     width: 100%;
     border: 3px solid magenta;
@@ -125,7 +125,7 @@ button {
 }
 
 .st-content2, .nd-content2, .st-content3, .nd-content3, .st-content5, .nd-content5,
- .st-content6, .nd-content6 {
+ .st-content6, .nd-content6, .st-content10, .nd-content10 {
     width: 50%;
     border: 3px solid peachpuff;
 }
@@ -201,7 +201,7 @@ button {
     right: 0%;
 }
 
-.content6 {
+.content6, .content7, .content9 {
     margin-bottom: 250px;
 }
 
@@ -265,8 +265,75 @@ button {
 
 .content8 {
     display: flex;
+    width: 100%;
 }
 
 .st-content8, .nd-content8, .rd-content8 {
     width: 33%;
+}
+
+.nd-content8, .rd-content8 {
+    display: flex;
+    flex-direction: column;
+}
+
+.nd-content8 div, .rd-content8 div {
+    background-color: rgb(241, 241, 241);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.st-content9, .nd-content9, .rd-content9 {
+    width: 33%;
+}
+
+.thirteen {
+    float: left;
+    position: relative;
+    z-index: 3;
+    top: 10%;
+    left: 0px;
+}
+
+.content11 {
+    display: flex;
+    background-color: red;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    color: white;
+    gap: 280px;
+}
+
+.content11 button {
+    color: red;
+    background-color: white;
+    border-radius: 30px;
+    border-style: none;  
+}
+
+.content12 {
+    display: flex;
+    width: 100%;
+    background-color: yellowgreen;
+    height: 300px;
+}
+
+.st-content12, .nd-content12 {
+    width: 50%;
+}
+
+.final-links {
+    display: flex;
+}
+
+.final-one, .final-two {
+    width: 35%;
+}
+
+.final-three {
+    width: 30%;
 }

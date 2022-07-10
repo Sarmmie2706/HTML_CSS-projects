@@ -1,5 +1,19 @@
 body {
-    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 0 1 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;   
+}
+
+a {
+    color: rgba(202, 8, 8, 0.993);
+}
+
+.grey, .grey a, .content9 p, .final-numbers {
+    color: rgb(85, 85, 85);
+    line-height: 1.8;
 }
 
 .header {
@@ -8,7 +22,7 @@ body {
     height: 100px;
     justify-content: space-around;
     align-items: center;
-    gap: 80px;
+    gap: 100px;
     position: sticky;
     top: 0px;
     background-color: rgb(255, 255, 255, 0.975);   
@@ -19,13 +33,12 @@ body {
 .logo {
     display: flex;
     gap: 20px;
-    align-items: center;
-    
+    align-items: center;  
 }
 
-.logotext {
+.logotest, .textlogo {
     display: flex;
-    color: red;
+    color: rgba(202, 8, 8, 0.993);
     font-size: 30px;
     font-weight: 700;
 }
@@ -39,7 +52,12 @@ body {
     display: flex;
     gap: 50px;
     color: rgba(128, 128, 128, 0.944);
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mid a {
+    color: rgba(128, 128, 128, 0.944);
+    text-decoration: none;
+    font-size: 15px;
 }
 
 button {
@@ -49,24 +67,25 @@ button {
     border-style: none;
     color: white;
     font-size: 15px;
+    cursor: pointer;
+}
+
+.content1 button {
+    height: 60px;
 }
 
 .content1 {
     display: flex;
-    width: 100%;
-   
-    border: 2px solid green;
+    margin-bottom: 50x;
 }
 
 .content1 .text {
     width: 50%;
     padding-left: 65px;
-    border: 2px solid yellow;
 }
 
 .content1 .image {
     width: 50%;
-    border: 2px solid orangered;
     padding-left: 10px;
 }
 
@@ -109,10 +128,9 @@ button {
     width: 550px;
 }
 
-.content2, .content3, .content5, .content6, .content7, .content8, .content9, .content10 {
+.content2, .content3, .content5, .content6, .content7, .content8, .content9, .content10, .content12 {
     display: flex;
     width: 100%;
-    border: 3px solid magenta;
     padding-left: 65px;
 }
 
@@ -120,14 +138,13 @@ button {
     margin-bottom: 20px;
 }
 
-.content3 {
+.content3, .content10, .content4, .content5 {
     margin-bottom: 150px;
 }
 
 .st-content2, .nd-content2, .st-content3, .nd-content3, .st-content5, .nd-content5,
- .st-content6, .nd-content6, .st-content10, .nd-content10 {
+ .st-content6, .nd-content6, .st-content10, .nd-content10, .st-content12, .nd-content12 {
     width: 50%;
-    border: 3px solid peachpuff;
 }
 
 .content4 {
@@ -148,7 +165,7 @@ button {
     margin-right: -100%;
     position: relative;
     top: 15px;
-    left: 10px;
+    left: 23px;
     width: 30%;
     z-index: 3;
 }
@@ -157,7 +174,7 @@ button {
     float: right;
     position: relative;
     top: 0%;
-    right: 15%;
+    right: 23%;
     z-index: 2;
 }
 
@@ -172,11 +189,12 @@ button {
 .quotediv {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     height: 250px;
     background-color: rgb(241, 241, 241);
-    padding: 50px 50px 100px 50px;
+    padding: 50px 50px 100px 75px;
     margin-bottom: 100px;
+    
 }
 
 .inquote {
@@ -218,7 +236,7 @@ button {
     float: right;
     position: relative;
     top: 45%;
-    right: 20%;
+    right: 23%;
     z-index: 3;
 }
 
@@ -266,20 +284,25 @@ button {
 .content8 {
     display: flex;
     width: 100%;
+    gap: 20px;
+    margin-bottom: 100px;
 }
 
-.st-content8, .nd-content8, .rd-content8 {
-    width: 33%;
+.st-content8 {
+    width: 28%;
 }
 
 .nd-content8, .rd-content8 {
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
+    width: 30%;
+    
 }
 
 .nd-content8 div, .rd-content8 div {
     background-color: rgb(241, 241, 241);
-    height: 100px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,7 +310,7 @@ button {
 }
 
 .st-content9, .nd-content9, .rd-content9 {
-    width: 33%;
+    width: 32%;
 }
 
 .thirteen {
@@ -300,7 +323,7 @@ button {
 
 .content11 {
     display: flex;
-    background-color: red;
+    background-color: rgba(231, 62, 62, 0.993);
     justify-content: space-around;
     align-items: center;
     height: 200px;
@@ -309,7 +332,7 @@ button {
 }
 
 .content11 button {
-    color: red;
+    color: rgba(202, 8, 8, 0.993);
     background-color: white;
     border-radius: 30px;
     border-style: none;  
@@ -318,12 +341,9 @@ button {
 .content12 {
     display: flex;
     width: 100%;
-    background-color: yellowgreen;
-    height: 300px;
-}
-
-.st-content12, .nd-content12 {
-    width: 50%;
+    background-color: rgb(36, 36, 36);
+    height: 400px;
+    padding-top: 40px;
 }
 
 .final-links {
@@ -336,4 +356,31 @@ button {
 
 .final-three {
     width: 30%;
+}
+
+.content12 img {
+    height: auto;
+    width: 60px;
+}
+
+.final-numbers {
+    position: relative;
+    margin-top: 100px;
+    font-size: 15px;
+    color: rgb(177, 174, 174);
+}
+
+.final-numbers a {
+    color: rgb(177, 174, 174);
+}
+
+.final-links a {
+    color: rgb(255, 255, 255, 0.975);
+    line-height: 1.8;
+}
+
+.logotext {
+    margin-bottom: 168px;
+    display: flex;
+    gap: 5px;
 }
